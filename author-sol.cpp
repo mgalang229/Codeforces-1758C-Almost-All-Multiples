@@ -13,7 +13,7 @@ example:
 
 to get this sequence, prime factorize (n / x):
 
-	12
+    12
    /  \
   2    6
       / \
