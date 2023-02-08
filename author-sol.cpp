@@ -1,6 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+
+the sequence that will be shifted to the left:
+x | a[1] | a[2] | ... | n
+
+example:
+3 | 6 | 12 and 2 | 4 | 12
+
+2 | 4 | 8 | 12 is not possible because 8 does not divide 12
+
+to get this sequence, prime factorize (n / x):
+
+	12
+   /  \
+  2    6
+      / \
+     2   3
+
+12 = 2 * 2 * 3
+
+[2, 2, 3]
+[2, 4, 3]
+[2, 4, 12] <=
+
+*/
+
 void test_case(int& tc) {
 	int n, x;
 	cin >> n >> x;
